@@ -34,14 +34,15 @@ class FizzBuzz {
 //            }
 //        }
 
-        doFizzBuzz();
+        doFizzBuzz(100);
     }
 
-    private static void doFizzBuzz() {
-        // Solve the lab1.FizzBuzz challenge with while loop.
-        int j = 0;
+    public static void doFizzBuzz(int i) {
 
-        while (j <= 100) {
+        // Solve the lab1.FizzBuzz challenge with while loop.
+        int j = 1;
+
+        while (j <= i) {
 
             // Find out which numbers divide i.
             boolean divisibleBy3 = j % 3 == 0;
